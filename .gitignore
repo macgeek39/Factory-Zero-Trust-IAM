@@ -1,0 +1,9 @@
+.env
+.env.*
+!.env.example
+*.pem
+*.pfx
+*.key
+terraform.tfstate
+terraform.tfstate.*
+.terraform/
