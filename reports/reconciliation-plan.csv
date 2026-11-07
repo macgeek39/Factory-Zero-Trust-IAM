@@ -1,0 +1,6 @@
+"EmployeeId","Decision","AddGroups","RemoveGroups"
+"EMP001","NO_CHANGE","",""
+"EMP002","NO_CHANGE","",""
+"EMP003","CHANGE_REQUIRED","","FZT-Production"
+"EMP004","DISABLE_AND_REVOKE","","FZT-AllEmployees;FZT-Production"
+"EMP005","CHANGE_REQUIRED","FZT-Production","FZT-Finance"

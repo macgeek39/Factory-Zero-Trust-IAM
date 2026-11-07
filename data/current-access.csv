@@ -1,0 +1,12 @@
+EmployeeId,GroupName
+EMP001,FZT-AllEmployees
+EMP001,FZT-QA
+EMP002,FZT-AllEmployees
+EMP002,FZT-Production
+EMP003,FZT-AllEmployees
+EMP003,FZT-Finance
+EMP003,FZT-Production
+EMP004,FZT-AllEmployees
+EMP004,FZT-Production
+EMP005,FZT-AllEmployees
+EMP005,FZT-Finance

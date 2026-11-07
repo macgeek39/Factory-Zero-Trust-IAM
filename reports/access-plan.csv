@@ -1,0 +1,5 @@
+"EmployeeId","Department","Decision","Groups"
+"EMP001","Quality Assurance","PROPOSE_ASSIGNMENT","FZT-AllEmployees;FZT-QA"
+"EMP002","Production","PROPOSE_ASSIGNMENT","FZT-AllEmployees;FZT-Production"
+"EMP003","Finance","PROPOSE_ASSIGNMENT","FZT-AllEmployees;FZT-Finance"
+"EMP004","Production","DISABLE_AND_REVOKE",""

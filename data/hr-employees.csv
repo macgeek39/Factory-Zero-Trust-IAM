@@ -1,0 +1,6 @@
+EmployeeId,Name,Department,Status
+EMP001,Alex Carter,Quality Assurance,Active
+EMP002,Jordan Lee,Production,Active
+EMP003,Taylor Morgan,Finance,Active
+EMP004,Casey Reed,Production,Terminated
+EMP005,Jamie Brooks,Production,Active

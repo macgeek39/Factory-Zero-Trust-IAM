@@ -1,0 +1,123 @@
+# Lab 01 — Build IAM Lab Foundation
+
+**Project:** Factory Zero Trust IAM  
+**Date:** November 7, 2026  
+**Environment:** macOS, Microsoft Entra ID P2, PowerShell 7.6.9, Microsoft Graph  
+**Status:** Initial connectivity validated; repository publishing pending verification
+
+## 1. Objective
+
+Establish a secure development foundation for an enterprise Identity and Access Management (IAM) automation project.
+
+The environment will support future implementations of Zero Trust access controls, identity lifecycle management, privileged identity management, and identity governance.
+
+## 2. Business Scenario
+
+A fictional enterprise needs to modernize its identity infrastructure, reduce excessive privileges, and improve visibility into identity-related security risks.
+
+Before implementing automated identity controls, engineers must establish reliable access to the identity platform and verify that API authentication works.
+
+## 3. Tools and Technologies
+
+| Technology | Purpose |
+|---|---|
+| Microsoft Entra ID P2 | Enterprise identity platform |
+| PowerShell 7.6.9 | IAM automation and scripting |
+| Microsoft Graph API | Identity information and management API |
+| Visual Studio Code | Development environment |
+| Git and GitHub | Version control and technical documentation |
+| macOS | Local development workstation |
+
+## 4. Implementation
+
+### Step 1 — Establish the Development Environment
+
+Prepared a macOS development environment for working with Microsoft Entra ID and GitHub.
+
+Installed and verified PowerShell 7.6.9.
+
+### Step 2 — Prepare Microsoft Graph Authentication
+
+Used Microsoft Graph PowerShell authentication to establish a connection to Microsoft Entra ID.
+
+The initial authentication requested the delegated `User.Read` permission.
+
+Command:
+
+`Connect-MgGraph -Scopes "User.Read"`
+
+This scope allows the application to read the signed-in user's profile without requesting directory-wide administrative permissions.
+
+### Step 3 — Validate Microsoft Graph Connectivity
+
+Performed an initial Microsoft Graph API request against the signed-in user's profile.
+
+Endpoint:
+
+`GET https://graph.microsoft.com/v1.0/me`
+
+**Observed result:** The authentication and initial Graph connectivity test completed successfully.
+
+This demonstrated that the development environment could authenticate and communicate with Microsoft Graph.
+
+### Step 4 — Establish Version Control
+
+Identified the GitHub repository for storing project code, architecture documentation, and test evidence.
+
+Repository: `macgeek39/factory-zero-trust-iam`
+
+Repository publishing and push authentication remain to be verified.
+
+## 5. Engineering Decisions
+
+**Decision 1: Begin with limited permissions**
+
+Start with the delegated `User.Read` scope instead of immediately requesting privileged directory permissions.
+
+**Reason:** Follow the principle of least privilege and minimize unnecessary access during early development.
+
+**Decision 2: Validate connectivity before automation**
+
+Confirm that Microsoft Graph authentication works before implementing automated changes.
+
+**Reason:** Separate environment and authentication problems from future automation issues.
+
+**Decision 3: Use GitHub for version control**
+
+Maintain documentation and scripts in a version-controlled repository.
+
+**Reason:** Improve traceability, reproducibility, collaboration, and engineering accountability.
+
+## 6. Validation
+
+| Test | Result |
+|---|---|
+| PowerShell version verified | Passed |
+| Microsoft Graph authentication | Passed |
+| Microsoft Graph `/me` request | Passed |
+| GitHub remote publishing | Pending verification |
+
+## 7. Security Considerations
+
+- Use minimal Microsoft Graph permissions.
+- Keep real credentials, access tokens, and secrets out of GitHub.
+- Use synthetic identities and test data in future labs.
+- Validate commands before performing identity changes.
+- Document security-relevant architecture decisions.
+
+## 8. Lessons Learned
+
+This lab reinforced the importance of establishing a secure IAM development environment before building automation.
+
+I gained practical experience connecting PowerShell to Microsoft Graph and validating access using a limited delegated permission scope.
+
+The lab also established a foundation for treating identity management as an engineering discipline supported by automation, testing, and documentation.
+
+## 9. Next Steps
+
+- Confirm GitHub authentication and successful repository publishing.
+- Continue developing the Factory Zero Trust IAM architecture.
+- Implement additional identity management and access-control labs.
+- Capture sanitized evidence for future validation.
+
+**Lab 01 Outcome:** Successfully established and validated an initial PowerShell-to-Microsoft-Graph connection.
